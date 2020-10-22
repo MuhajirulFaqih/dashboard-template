@@ -1,1 +1,1 @@
-# dashboard-template
+# Shop Dashboard Template
