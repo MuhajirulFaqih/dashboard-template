@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Toko Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li class="header">
+                    <a href="">
+                        <img src="assets/logo.png" alt="">
+                    </a>
+                    <button class="btn toggle">
+                        <span data-eva="arrow-ios-back-outline"></span>
+                    </button>
+                </li>
+                <li class="active">
+                    <a href="">
+                        <span data-eva="home-outline"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span data-eva="archive-outline"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span data-eva="shopping-bag-outline"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span data-eva="people-outline"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span data-eva="shopping-cart-outline"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span data-eva="person-outline"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span data-eva="options-2-outline"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <nav class="topbar">
+                <button class="btn toggle">
+                    <span data-eva="menu-outline"></span>
+                </button>
+                <div class="profile">
+                    <a class="notification" href="#">
+                        <span class="notification-number">2</span>
+                        <span data-eva="bell-outline"></span>
+                    </a>
+                    <img src="assets/avatar.png" alt="">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Jane Peep <span data-eva="arrow-ios-downward-outline"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Profil saya</a>
+                            <a class="dropdown-item" href="#">Ubah password</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="contain">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <div class="alert alert-custom" role="alert">
+                            <b>Halo Jane!</b> Selamat datang kembali :)
+                        </div>
+                        <div class="card-custom">
+                            <div class="card-custom-header">
+                                <div class="title">Statistik pemesanan</div>
+                                <div class="sort">
+                                    <button type="button" class="btn btn-smooth date">
+                                        <span data-eva="calendar-outline"></span> 
+                                        <span class="label">Tanggal</span>
+                                        <span data-eva="arrow-ios-downward-outline"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-custom-body">
+                                <div class="chart-container" style="height:25vh;">
+                                    <canvas id="pemesanan"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-custom">
+                            <div class="card-custom-header">
+                                <div class="title">Produk terlaris</div>
+                                <div class="sort">
+                                    <button class="btn btn-navigate product-owl-previous mr-2 mr-lg-4">
+                                        <span data-eva="arrow-ios-back-outline"></span>
+                                    </button>
+                                    <button class="btn btn-navigate product-owl-next">
+                                        <span data-eva="arrow-ios-forward-outline"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="product owl-carousel owl-theme owl-custom">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <a href="">
+                                                    <div class="card-product">
+                                                        <img src="assets/product-1.png">
+                                                        <div class="overlay">
+                                                            Powerfull headset glacer Y097
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <a href="">
+                                                    <div class="card-product">
+                                                        <img src="assets/product-2.png">
+                                                        <div class="overlay">
+                                                            Sepatu adidas ocean blue 2XCO
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <a href="">
+                                                    <div class="card-product">
+                                                        <img src="assets/product-3.png">
+                                                        <div class="overlay">
+                                                            Android smart watch untuk anak-anak
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <a href="">
+                                                    <div class="card-product">
+                                                        <img src="assets/product-4.png">
+                                                        <div class="overlay">
+                                                            Jam minimalis multifungsi
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="infographic">
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="item">
+                                        <span data-eva="shopping-bag-outline"></span>
+                                        <div class="description">
+                                            <span class="number">143</span>
+                                            <span class="label">Produk</span>
+                                        </div>
+                                        <a href=""><span data-eva="arrow-ios-forward-outline"></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="item">
+                                        <span data-eva="grid-outline"></span>
+                                        <div class="description">
+                                            <span class="number">9</span>
+                                            <span class="label">Kategori</span>
+                                        </div>
+                                        <a href=""><span data-eva="arrow-ios-forward-outline"></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="item">
+                                        <span data-eva="person-done-outline"></span>
+                                        <div class="description">
+                                            <span class="number">896</span>
+                                            <span class="label">Customer</span>
+                                        </div>
+                                        <a href=""><span data-eva="arrow-ios-forward-outline"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-custom">
+                            <div class="card-custom-header">
+                                <div class="title">Statistik pengunjung</div>
+                                <div class="sort">
+                                    <button type="button" class="btn btn-smooth date">
+                                        <span data-eva="calendar-outline"></span> 
+                                        <span class="label">Tanggal</span>
+                                        <span data-eva="arrow-ios-downward-outline"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-custom-body">
+                                <div class="chart-container" style="height:45vh;">
+                                    <canvas id="pengunjung"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/eva.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
