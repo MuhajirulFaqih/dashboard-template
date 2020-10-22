@@ -237,31 +237,31 @@ nav.topbar .profile > .dropdown .dropdown-toggle::after {
     top: 1em;
 }
 
-.card-custom > .card-custom-header > .sort > .btn-smooth {
+.card-custom > .card-custom-header > .sort > div > .btn-smooth {
     border-radius: 0.5rem;
     background: #FFFFFF;
     color: #323232;
 }
 
-.card-custom > .card-custom-header > .sort > .btn-smooth:focus {
+.card-custom > .card-custom-header > .sort > div > .btn-smooth:focus {
     box-shadow: 0 0 0 0.2rem rgb(207 234 215);
 }
 
-.card-custom > .card-custom-header > .sort > .btn-smooth .eva:first-child {
+.card-custom > .card-custom-header > .sort > div > .btn-smooth .eva:first-child {
     fill: #4DBABC;
 }
 
-.card-custom > .card-custom-header > .sort > .btn-smooth .eva:last-child {
+.card-custom > .card-custom-header > .sort > div > .btn-smooth .eva:last-child {
     fill: #323232;
 }
 
-.card-custom > .card-custom-header > .sort > .btn-navigate {
+.card-custom > .card-custom-header > .sort > div > .btn-navigate {
     padding: 0.45rem 0.5rem !important;
     background: #FFFFFF;
     border-radius:  50%;
 }
 
-.card-custom > .card-custom-header > .sort > .btn-navigate:focus {
+.card-custom > .card-custom-header > .sort > div > .btn-navigate:focus {
     box-shadow: 0 0 0 0.2rem rgb(207 234 215);
 }
 
@@ -409,6 +409,11 @@ nav.topbar .profile > .dropdown .dropdown-toggle::after {
     
     .card-custom > .card-custom-header > .sort {
         position: relative;
+        height: 3em;
+    }
+    
+    .card-custom > .card-custom-header > .sort > div {
+        float: right;
     }
     
     .card-custom > .card-custom-body {

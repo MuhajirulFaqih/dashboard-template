@@ -334,7 +334,18 @@
     color: #fff;
   }
 
+  .daterangepicker .drp-selected {
+    display: block;
+  }
+
+  .daterangepicker .cancelBtn {
+    margin-top: 1em;
+    display: inline-block;
+  }
+
   .daterangepicker .applyBtn {
+    margin-top: 1em;
+    display: inline-block;
     background: #43b5bf !important;
     border-color: #43b5bf !important;
   }
