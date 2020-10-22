@@ -407,6 +407,10 @@ nav.topbar .profile > .dropdown .dropdown-toggle::after {
         font-size: 1.25em;
     }
     
+    .card-custom > .card-custom-header > .sort {
+        position: relative;
+    }
+    
     .card-custom > .card-custom-body {
         padding: 1rem;
     }
